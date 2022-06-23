@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
+        :root {
+            --color-white: #f3f3f3;
+            --color-darkpurple: #480864;
+            --color-darkgold: #735607;
+            --color-green: #37af65;
+        }
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Poppins", sans-serif;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.4rem;
+            color: var(--color-white);
+            margin: 0;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            background-color: var(--color-darkpurple);
+            background-position: center;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        #body {
+            background-color: var(--color-darkpurple);
+            background-size: cover;
+            background-position: center;
+
+        }
+
+        .form-div {
+            background-color: var(--color-darkgold);
+            padding: 50px 0px 50px 0px;
+            margin: 0px 500px 0px 500px;
+            border-radius: 20px;
+            display: "grid";
+        }
+
+        h1,
+        p {
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+        }
+
+        h1 {
+            font-weight: 400rem;
+            line-height: 1.2rem;
+        }
+
+        p {
+            font-size: 1.125rem;
+        }
+
+        label {
+            display: flex;
+            align-items: center;
+            font-size: 1.125rem;
+            margin-bottom: 0.5rem;
+        }
+
+        input,
+        button,
+        select,
+        textarea {
+            margin: 0;
+            font-family: inherit;
+            font-size: inherit;
+            line-height: inherit;
+        }
+
+        button {
+            border: none;
+        }
+
+        .container {
+            width: 100%;
+            margin: 3.125rem auto 0 auto;
+        }
+
+        @media(min-width: 576px) {
+            .container {
+                max-width: 540px;
+            }
+        }
+
+        @media(min-width: 768px) {
+            .container {
+                max-width: 720px;
+            }
+        }
+
+        .header {
+            padding: 0 0.625rem;
+            margin-bottom: 720px;
+        }
+
+        .description {
+            font-style: italic;
+            font-weight: 200;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+        }
+
+        .clue {
+            margin-left: 0.25rem;
+            font-size: 0.9rem;
+            color: #e4e4e4;
+        }
+
+        form {
+            background: var(--color-darkgold);
+            padding: 2.5rem 0.625rem;
+            border-radius: 0.25rem;
+        }
+
+        .form-group {
+            margin: 0 auto 1.25rem auto;
+            padding: 0.25rem;
+        }
+
+        .form-control {
+            display: block;
+            width: 100%;
+            height: 2.375rem;
+            padding: 0.375rem .75rem;
+            color: #495057;
+            background-color: #fff;
+            background-clip: padding-box;
+            border: 1px solid #ced4da;
+            border-radius: 0.25rem;
+        }
+
+        .form-control:focus {
+            border-color: #80bdff;
+            outline: 0;
+            box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+        }
+
+        .input-radio,
+        .input-checkbox {
+            display: inline-block;
+            margin-right: 0.625rem;
+            min-height: 1.25rem;
+            min-width: 1.25rem;
+        }
+
+        .input-textare {
+            min-height: 120px;
+            width: 100%;
+            padding: 0.625rem;
+            resize: vertical;
+        }
+
+        .submit-button {
+            display: block;
+            width: 100%;
+            padding: 0.74;
+            background: var(--color-green);
+            color: inherit;
+            border-radius: 2px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header id="header">
+            <h1 id="title" class="text-center">Kaden Baratcart Survey Form
+            </h1>
+            <p id="description" class="description text-center">Thanks for taking the time to give your input.
+            </p>
+        </header>
+        <form id="survey-form">
+            <div class="form-group">
+                <label for="name" id="name-label">Name</label>
+                <input type="name" name="name" id="name" class="form-control" placeholder="Enter your name" required />
+                <label for="email" id="email-label">Email</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email"
+                    required />
+                <label for="number" id="number-label">Age (optional)</label>
+                <input type="number" id="number" name="age" class="form-control" placeholder="Age" min="18" max="100">
+                <div class="form-group">
+                    <p>Which option best describes your current role?</p>
+                    <select id="dropdown" name="role" class="form-control" required>
+                        <option value="student">Student</option>
+                        <option value="job">Full Time Job</option>
+                        <option value="lerner">Full Time Learner</option>
+                        <option value="prefernot">Prefer not to say</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <p>Would you say I am a total stud?</p>
+                <label for="yes">
+                    <input type="radio" id="yes" class="input-radio" value="yes" name="stud" checked>Yes
+                </label>
+                <label for="Definitely">
+                    <input type="radio" id="definitely" class="input-radio" value="definitely" name="stud">Definitely
+                </label>
+                <label for="well-of-couse">
+                    <input type="radio" id="well-of-course" class="input-radio" value="well-of-course" name="stud">Well
+                    of course
+                </label>
+                <div>
+                    <p>What describes your knowledge of coding?</p>
+                    <label for="begginer">
+                        <input name="knowledge" value="begginer" type="checkbox" class="input-checkbox">Begginer
+                    </label>
+                    <label for="intermediate">
+                        <input name="knowledge" value="intermediate" type="checkbox" class="input-checkbox">Intermediate
+                    </label>
+                    <label for="pro">
+                        <input name="knowledge" value="pro" type="checkbox" class="input-checkbox">Pro
+                    </label>
+                    <label for="snowden">
+                        <input name="knowledge" value="snowden" type="checkbox" class="input-checkbox">Snowden
+                    </label>
+                </div>
+                <div class="form-group">
+                    <p>Any comments or suggestions?</p>
+                    <textarea id="comments" class="input-textarea" name="comment"
+                        placeholder="Enter your comments here...">
+              </textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" id="submit" class="submit-button">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>

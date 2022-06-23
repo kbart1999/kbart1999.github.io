@@ -1,79 +1,437 @@
-<!DOCTYPE html>
+<!doctype html>
+<html lang="en">
+
 <head>
-<style>
-    #head{
-        text-align: center;
-        font-size: large;
-        font-weight: bold;
-        font-style:italic;
-        background: linear-gradient(25deg, crimson, rgb(82, 71, 71));
-        padding: 10px 0px 10px 0px;
-        
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Web Dev Alpha Force and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.88.1">
+  <title>Kaden Baratcart</title>
+
+
+
+  <!-- Bootstrap core CSS -->
+  <link href="bootstrap.min.css" rel="stylesheet">
+
+
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
     }
-    body{
-        background: linear-gradient(25deg, crimson, rgb(82, 71, 71));
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
     }
-    .me{
-        position: absolute;
-        margin: auto;
-        top: 50%;
-        left:50%;
-        vertical-align: bottom;
-    }
-    #kadenIMG{
-        width:100px;
-        height: 100px;
-        border-radius: 80%;
-        animation-name: image;
-        animation-duration: 6s;
-        animation-iteration-count: 1;
-        animation-fill-mode: forwards ;
-    }
-    @keyframes image{
-        0%{
-            transform: scale(1);
-        }
-        12.5%{
-            transform: scale(.85);
-        }
-        25%{
-            transform: scale(1.0);
-        }
-        37.5%{
-            transform: scale(.85);
-        }
-        50%{
-            transform: scale(1.0);
-        }
-        62.5%{
-            transform: scale(.85);
-        }
-        75%{
-            transform: scale(1.0);
-            opacity: 100%;
-            margin-top: 0%;
-        }
-        85%{
-            margin-top: -10%;
-        }
-        100%{
-            opacity: 0%;
-            margin-top: 100%;
-        }
-    }
-    
-</style>
-<title>
-    Kadens Website
-</title>
+  </style>
+
+
+  <!-- Custom styles for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="carousel.css" rel="stylesheet">
 </head>
+
 <body>
-    <div class="me">
-        <img id="kadenIMG" src="https://pkimgcdn.peekyou.com/a572a1b5337f876b87d54e73cf715fd7.jpeg" alt="Kaden Profile Pic">
-    </div>
-    <section>
-        <a href="connectFour.html">Connect Four</a>
-        <a href="memoryGame.html">Memory Game</a>
-        <a href="whackAMole.html">Whack A Mole</a>
-    </section>
+
+  <div class="container">
+    <header class="blog-header py-3">
+      <div class="row flex-nowrap justify-content-between align-items-center">
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+          <a class="navbar-brand" href="#">W.D.A.F</a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+            </ul>
+            <form class="form-inline mt-2 mt-md-0">
+              <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main role="main" class="container">
+      <div class="nav-scroller py-1 mb-2">
+        <nav class="nav d-flex justify-content-between">
+          <a class="p-2 text-muted" href="#personal-statement">Personal Statement</a>
+          <a class="p-2 text-muted" href="#Projects">Projects</a>
+          <a class="p-2 text-muted" href="#education">Education</a>
+          <a class="p-2 text-muted" href="#course-history">Course History</a>
+          <a class="p-2 text-muted" href="#liscences-and-certifications">Liscences</a>
+          <a class="p-2 text-muted" href="#liscences-and-certifications">Certifications</a>
+          <a class="p-2 text-muted" href="#skills">Skills</a>
+          <a class="p-2 text-muted" href="#business">Buisiness</a>
+          <a class="p-2 text-muted" href="#past-employment">Past Employment</a>
+          <a class="p-2 text-muted" href="#interests">Interests</a>
+          <a class="p-2 text-muted" href="#contact">Contact</a>
+        </nav>
+      </div>
+
+      <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
+        <div class="col-md-6 px-0">
+          <h1 class="display-4 font-italic">Kaden Baratcart</h1>
+          <p class="lead my-3">Multiple lines of text that form the lede, informing new readers quickly and efficiently
+            about what's most interesting in this post's contents.</p>
+          <p class="lead mb-0"><a href="#" class="text-white font-weight-bold">Continue reading...</a></p>
+        </div>
+      </div>
+      <section id="Projects">
+        <div class="row mb-2">
+          <div class="col-md-6">
+            <div
+              class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-success">Resource</strong>
+                <h3 class="mb-0">Java Doc Page</h3>
+                <div class="mb-1 text-muted">Nov 11</div>
+                <p class="mb-auto">This game is made using javascript and the goal is to score as high as you can and
+                  defeat waves of enemies.</p>
+                <a href="javaDocPage.html" class="stretched-link">View Resource</a>
+              </div>
+              <div class="col-auto d-none d-lg-block">
+                <a href="javaDocPage.html">
+                  <img src="img\javaDocCover.png" alt="Java Doc Page" class="bd-placeholder-img" width="200"
+                    height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
+                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                  <title>Java Doc Page</title>
+                  <rect width="100%" height="100%" fill="#55595c" />
+                  </img>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div
+              class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-success">Article</strong>
+                <h3 class="mb-0">Joe Rogan</h3>
+                <div class="mb-1 text-muted">Nov 11</div>
+                <p class="mb-auto">This game is made using javascript and the goal is to score as high as you can and
+                  defeat waves of enemies.</p>
+                <a href="JoeRogan.html" class="stretched-link">View Article</a>
+              </div>
+              <div class="col-auto d-none d-lg-block">
+                <a href="JoeRogan.html">
+                  <img src="img\tributePageCover.png" alt="Joe Rogan" class="bd-placeholder-img" width="200"
+                    height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
+                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                  <title>Joe Rogan</title>
+                  <rect width="100%" height="100%" fill="#55595c" />
+                  </img>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div
+              class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-success">Page</strong>
+                <h3 class="mb-0">Golden Dice</h3>
+                <div class="mb-1 text-muted">Nov 11</div>
+                <p class="mb-auto">This game is made using javascript and the goal is to score as high as you can and
+                  defeat waves of enemies.</p>
+                <a href="Product-Landing-Page.html" class="stretched-link">View Page</a>
+              </div>
+              <div class="col-auto d-none d-lg-block">
+                <a href="Product-Landing-Page.html">
+                  <img src="img\productLandingCover.png" alt="Joe Rogan" class="bd-placeholder-img" width="200"
+                    height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
+                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                  <title>Golden Dice</title>
+                  <rect width="100%" height="100%" fill="#55595c" />
+                  </img>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div
+              class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-success">Survey</strong>
+                <h3 class="mb-0">Survey Page</h3>
+                <div class="mb-1 text-muted">Nov 11</div>
+                <p class="mb-auto">This game is made using javascript and the goal is to score as high as you can and
+                  defeat waves of enemies.</p>
+                <a href="Kaden Survey Web.html" class="stretched-link">View Page</a>
+              </div>
+              <div class="col-auto d-none d-lg-block">
+                <a href="Kaden Survey Web.html">
+                  <img src="img\surveyFormCover.png" alt="Survey Form" class="bd-placeholder-img" width="200"
+                    height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
+                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                  <title>Survey Form</title>
+                  <rect width="100%" height="100%" fill="#55595c" />
+                  </img>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div
+              class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-success">Game</strong>
+                <h3 class="mb-0">Doodle Jump</h3>
+                <div class="mb-1 text-muted">Nov 11</div>
+                <p class="mb-auto">This game is made using javascript and the goal is to score as high as you can and
+                  defeat waves of enemies.</p>
+                <a href="doodleJump.html" class="stretched-link">View Page</a>
+              </div>
+              <div class="col-auto d-none d-lg-block">
+                <a href="doodleJump.html">
+                  <img src="img\doodleJump.png" alt="Doodle Jump" class="bd-placeholder-img" width="200" height="250"
+                    xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
+                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                  <title>Doodle Jump</title>
+                  <rect width="100%" height="100%" fill="#55595c" />
+                  </img>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div
+              class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-success">Game</strong>
+                <h3 class="mb-0">Memory Game</h3>
+                <div class="mb-1 text-muted">Nov 11</div>
+                <p class="mb-auto">This game is made using javascript and the goal is to score as high as you can and
+                  defeat waves of enemies.</p>
+                <a href="memoryGameKaden.html" class="stretched-link">View Game</a>
+              </div>
+              <div class="col-auto d-none d-lg-block">
+                <a href="memoryGameKaden.html">
+                  <img src="img\memoryGame.jpg" alt="Memory Game" class="bd-placeholder-img" width="200" height="250"
+                    xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
+                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                  <title>Memory Game</title>
+                  <rect width="100%" height="100%" fill="#55595c" />
+                  </img>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div
+              class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-success">Game</strong>
+                <h3 class="mb-0">Whack A Mole</h3>
+                <div class="mb-1 text-muted">Nov 11</div>
+                <p class="mb-auto">This game is made using javascript and the goal is to score as high as you can and
+                  defeat waves of enemies.</p>
+                <a href="whackAMole.html" class="stretched-link">View Game</a>
+              </div>
+              <div class="col-auto d-none d-lg-block">
+                <a href="whackAMole.html">
+                  <img src="img\whackAMole.jpg" alt="Whack A Mole" class="bd-placeholder-img" width="200" height="250"
+                    xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
+                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                  <title>Whack A Mole</title>
+                  <rect width="100%" height="100%" fill="#55595c" />
+                  </img>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div
+              class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-success">Game</strong>
+                <h3 class="mb-0">Connect Four</h3>
+                <div class="mb-1 text-muted">Nov 11</div>
+                <p class="mb-auto">This game is made using javascript and the goal is to score as high as you can and
+                  defeat waves of enemies.</p>
+                <a href="connectFour.html" class="stretched-link">View Page</a>
+              </div>
+              <div class="col-auto d-none d-lg-block">
+                <a href="connectFour.html">
+                  <img src="img\connectFour.jpg" alt="Connect Four" class="bd-placeholder-img" width="200" height="250"
+                    xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
+                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                  <title>Connect Four</title>
+                  <rect width="100%" height="100%" fill="#55595c" />
+                  </img>
+                </a>
+              </div>
+            </div>
+          </div>
+      </section>
+  </div>
+  </div>
+
+
+  <div class="row">
+    <div class="col-md-8 blog-main">
+      <h3 class="pb-4 mb-4 font-italic border-bottom">
+        Programmer in the Making
+      </h3>
+
+      <div class="blog-post">
+        <section id="personal-statement">
+          <h2 class="blog-post-title">Personal Statement</h2>
+          <p class="blog-post-meta">January 1, 2014 by <a href="#">Mark</a></p>
+
+          <p>This blog post shows a few different types of content that's supported and styled with Bootstrap. Basic
+            typography, images, and code are all supported.</p>
+          <hr>
+          <p>Yeah, she dances to her own beat. Oh, no. You could've been the greatest. 'Cause, baby, <a href="#">you're
+              a
+              firework</a>. Maybe a reason why all the doors are closed. Open up your heart and just let it begin. So
+            très
+            chic, yeah, she's a classic.</p>
+          <blockquote>
+            <p>Bikinis, zucchinis, Martinis, no weenies. I know there will be sacrifice but that's the price.
+              <strong>This
+                is how we do it</strong>. I'm not sticking around to watch you go down. You think you're so rock and
+              roll,
+              but you're really just a joke. I know one spark will shock the world, yeah yeah. Can't replace you with a
+              million rings.
+            </p>
+          </blockquote>
+          <p>Trying to connect the dots, don't know what to tell my boss. Before you met me I was alright but things
+            were
+            kinda heavy. You just gotta ignite the light and let it shine. Glitter all over the room <em>pink
+              flamingos</em> in the pool. </p>
+        </section>
+        <section id="education">
+          <h2>Education</h2>
+          <p>I attended Washington State University my freshman year majoring in Biology. I then decided to change paths
+            and come back home to Boise to finish off my schooling. Here I have majored in Games, Interactive Media, and
+            Mobile Technologies, also known as GIMM. I also am minoring in Computer Science to further help my
+            understanding about programming and computers.</p>
+        </section>
+        <section id="course-history">
+          <h3>Course History</h3>
+          <ul>
+            <li>GIMM 370: Advanced 3D Modeling</li>
+            <li>CS 221: Computer Science ll</li>
+            <li>CS 121: Computer Science l</li>
+            <li>ITM 106: Database Topics</li>
+            <li>GIMM 360: Game & Virtual Reality Audio</li>
+            <li>GIMM 290: Game Design Theory</li>
+            <li>GIMM 270: Interactive Audio & Video</li>
+            <li>GIMM 289: Interactive Physical Computing</li>
+            <li>GIMM 110 Interactive Programming</li>
+            <li>CS 111: Intro to Programming</li>
+            <li>ITM 370: Mobile Application Development</li>
+            <li>GIMM 310: Mobile Application Development</li>
+            <li>GIMM 300: Mobile Web Development</li>
+            <li>CS-HU 153: Navigating Computer Systems</li>
+            <li>ITM104: OS & Word processing topics</li>
+            <li>ITM 105: Spreadsheet Topics</li>
+            <li>ITM 325: Web Application Development</li>
+          </ul>
+        </section>
+        <section id="liscences-and-certifications">
+          <h3>Liscences & Certifications</h3>
+          <p>Responsive Web Design - freeCodeCamp (Feb 2022)</p>
+        </section>
+        <section id="skills">
+          <h3>Skills</h3>
+          <ul>
+            <li>C#</li>
+            <li>Strategy</li>
+            <li>Problem Solving</li>
+            <li>Java</li>
+            <li>Unity</li>
+            <li>C (Programming Language)</li>
+            <li>Communication</li>
+            <li>Microsoft Excel</li>
+            <li>Web Design</li>
+            <li>UX (User Experience)</li>
+          </ul>
+        </section>
+        <section id="business">
+          <h3>Business</h3>
+          <p>Fill in description here.</p>
+        </section>
+        <section id="past-employement">
+          <h3>Past Employement</h3>
+          <ul>
+            <li>Happy Camper RV Sales</li>
+            <li>Melting Pot</li>
+            <li>Central Paving</li>
+            <li>Einsteins Bagel and Bros</li>
+            <li>Boise Independent School District</li>
+          </ul>
+        </section>
+        <section id="interests">
+          <h3>Interests</h3>
+          <ul>
+            <li>Football</li>
+            <li>Soccer</li>
+            <li>Music</li>
+            <li>Festivals</li>
+            <li>Fishing</li>
+            <li>Coding</li>
+            <li>Video Games</li>
+            <li>Socializing</li>
+            <li>Food</li>
+          </ul>
+        </section>
+      </div><!-- /.blog-post -->
+
+
+      <nav class="blog-pagination">
+        <a class="btn btn-outline-primary" href="#">Older</a>
+        <a class="btn btn-outline-secondary disabled">Newer</a>
+      </nav>
+
+    </div><!-- /.blog-main -->
+
+    <aside class="col-md-4 blog-sidebar">
+      <div class="p-4 mb-3 bg-light rounded">
+        <h4 class="font-italic">About</h4>
+        <p class="mb-0">Saw you downtown singing the Blues. Watch you circle the drain. Why don't you let me stop by?
+          Heavy is the head that <em>wears the crown</em>. Yes, we make angels cry, raining down on earth from up above.
+        </p>
+      </div>
+
+
+      <section id="contact">
+        <div class="p-4">
+          <h4 class="font-italic">Elsewhere</h4>
+          <ol class="list-unstyled">
+            <li><a href="https://github.com/kbart1999">GitHub</a></li>
+            <li><a href="https://twitter.com/Kaden_Baratcart">Twitter</a></li>
+            <li><a href="https://www.facebook.com/kaden.baratcart">Facebook</a></li>
+          </ol>
+        </div>
+      </section>
+    </aside><!-- /.blog-sidebar -->
+
+  </div><!-- /.row -->
+
+  </main><!-- /.container -->
+
+  <!-- FOOTER -->
+  <footer class="container">
+    <p class="float-right"><a href="#">Back to top</a></p>
+    <p>&copy; 2017-2021 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+  </footer>
+
 </body>
+
+</html>

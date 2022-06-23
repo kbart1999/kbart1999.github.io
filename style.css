@@ -1,0 +1,457 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;0,600;0,700;0,900;1,300&display=swap');
+@font-face {
+    font-family: 'audreybold';
+    src: url('../fonts/audrey-bold-webfont.woff2') format('woff2'),
+         url('../fonts/audrey-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*  VARIABLES */
+:root {
+    /* colors */
+    --dark : #2C3531;
+    --blue : #116466;
+    --tanD : #D9B08C;
+    --tanL : #FFCB9A;
+    --lite : #D1E8E2;
+
+    --text-light : var(--lite);
+    --text-dark : var(--base);
+
+    --base : var(--dark);
+    --card-base : var(--lite);
+    --border : var(--tanD);
+    --nav-base : var(--blue);
+    --nav-active : var(--lite);
+    --nav-hover : var(--tanD);
+
+    --grad : linear-gradient(var(--lite), var(--tanL));
+    
+    /* sizes */
+    --img-size : 170px;
+    --card-min-size : 100px;
+    --std-section-max-width : 30vw;
+    --std-section-min-width : 400px;
+    --std-body-text-max-width : 250px;
+    --team-name-size:200px;
+
+    --border-radius : 10px;
+    --std-padding : 5px;
+    --std-margin : 5px;
+
+    --nav-height : 40px;
+    --nav-padding : 12px;
+
+    --nav-font-size : 1em;
+    --title-font-size : 2em;
+    --section-header-font-size : 1.15em;
+    --line-height : 1.4em;
+
+    /* fonts */
+    --audrey : 'audreybold', serif;
+    --titillium : 'titillium', sans-serif;
+}
+
+/* Animations */
+@keyframes example-anim1 {
+    from {
+	    color:white;
+    }
+    50% {
+	    color:green;
+    }
+    to {
+	    color:white;
+    }
+}
+
+        
+/*HOME PAGE*/
+#home-body{
+    background-image:url("https://i.ibb.co/SK6hGjK/webiste-Background.png");
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
+.border{
+    border: 2px solid black;
+}
+.parent{
+    display: flex;
+    padding:15px;
+    flex-wrap:wrap;
+}
+#home{
+    width: 100%;
+    padding-left:0px;
+}
+#abbreviation{
+    font-size: var(--team-name-size);
+    font-family:var(--audrey);
+}
+#abb-width{
+    min-width: 400px;
+    text-align: center;
+    overflow:hidden;
+    display: flex;;
+    flex-wrap: wrap;
+}
+#home-container{
+    width:60%;
+    text-align: center;
+}
+#home-container div{
+    margin:10px;
+}
+#quote{
+    font-family: var(--titillium);
+    color:var(--text-light);
+}
+.block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+    padding:auto;
+}
+section{
+    min-width: 850px;
+}
+#team-name{
+    display: block;
+    text-align: center;
+    margin:auto;
+    padding:auto;
+    font-family: var(--audrey);
+    color:var(--lite);
+}
+#team-description{
+    text-align:center;
+    margin:auto;
+    font-family: var(--titillium);
+    color:var(--lite);
+    min-width: auto;
+}
+#thing{
+    word-break: break-all;
+}
+/*MEMBERS PAGE*/
+.crop-contents:hover{
+    display: block;
+    color: var(--lite);
+}
+.hide{
+    display:none;
+}
+.expose:hover + .hide{
+    display:block;
+    color: var(--lite);
+}
+#kaden-body-container{
+    display: flex;
+    max-width: 1200px;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+    padding: auto;
+}
+.glow {
+    text-shadow: 0 0 1000px #dfbfbf;
+    color: transparent;
+    position: absolute;
+    top: 0;
+}
+.scanlines {
+    overflow: hidden;
+    mix-blend-mode: difference;
+}
+  .glitch, .glow {
+    color: #dfbfbf;
+    position: relative;
+    font-size: 9vw;
+    animation: glitch 5s 5s infinite;
+}
+  
+.glitch::before, .glow::before {
+    content: attr(data-text);
+    position: absolute;
+    left: -2px;
+    text-shadow: -5px 0 magenta;
+    background: black;
+    overflow: hidden;
+    top: 0;
+    animation: noise-1 3s linear infinite alternate-reverse, glitch 5s 5.05s infinite;
+}
+  
+.glitch::after, .glow::after {
+    content: attr(data-text);
+    position: absolute;
+    left: 2px;
+    text-shadow: -5px 0 lightgreen;
+    background: black;
+    overflow: hidden;
+    top: 0;
+    animation: noise-2 3s linear infinite alternate-reverse, glitch 5s 5s infinite;
+}
+  
+.scanlines::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: repeating-linear-gradient(to bottom, transparent 0%, rgba(255, 255, 255, 0.05) 0.5%, transparent 1%);
+    animation: fudge 7s ease-in-out alternate infinite;
+}
+  
+.subtitle {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 0.8vw;
+    color: rgba(165, 141, 141, 0.4);
+    text-transform: uppercase;
+    letter-spacing: 1em;
+    text-align: center;
+    position: absolute;
+    left: 17%;
+    animation: glitch-2 5s 5.02s infinite;
+  }
+/* GENERAL */
+body {
+    margin-top: var(--nav-height);
+    background-color: var(--base);
+    color: var(--text-light);
+    min-width: 450px;
+}
+.div a{
+    font-family: var(--titillium);
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+}
+p{
+    font-family: var(--titillium);
+}
+h1 {
+    font-family: var(--titillium);
+    text-align:center;
+    padding: var(--std-padding);
+    margin: var(--std-margin);
+    font-size: var(--section-header-font-size);
+}
+h2 {
+    font-family: var(--titillium);
+    font-weight:bold;
+    text-align:center;
+    padding: var(--std-padding);
+    margin: var(--std-margin);
+    font-size: var(--section-header-font-size);
+}
+h3 {
+    font-family: var(--titillium);
+    text-decoration: underline;
+    text-align: center;
+    padding: var(--std-padding);
+    margin: var(--std-margin);
+}
+ol {
+    font-family: var(--titillium);
+}
+ul {
+    font-family: var(--titillium);
+}
+
+.container {
+    display:flex;
+    justify-content:center;
+    align-items:top;
+    flex-wrap:wrap;
+}
+
+div.section{
+    margin: var(--std-margin);
+    padding: var(--std-padding);
+    display: inline-block;
+
+    max-width: var(--std-section-max-width);
+    min-width: var(--std-section-min-width);
+}
+
+.member-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:auto;
+    padding-top:15em;
+
+}
+
+.card {
+    border-radius: var(--border-radius);
+    border: 1px solid var(--border);
+    background-color: var(--card-base);
+    color: var(--text-dark);
+}
+
+.section-content {
+    display:inline-block;
+    min-height: var(--card-min-size);
+    min-width: var(--card-min-size);
+    padding: var(--std-padding);
+    margin: var(--std-margin);
+}
+
+.body-text {
+    max-width: var(--std-body-text-max-width);
+    font-family: var(--titillium);
+    line-height: var(--line-height);
+    padding: var(--std-padding);
+    margin: var(--std-margin);
+}
+
+#name-text {
+    font-family: var(--audrey);
+    font-size: var(--title-font-size);
+    
+    letter-spacing: 8px;
+    padding: var(--std-padding);
+    margin: var(--std-margin);
+}
+
+/* NAV BAR */
+#nav {
+    background-color: var(--nav-base);
+    position:fixed;
+    z-index:10;
+    height: var(--nav-height);
+    max-width:100%;
+    width:100%;
+    top:0px;
+}
+
+#nav a {
+    color: var(--text-light);
+    float: left;
+    padding: var(--nav-padding);
+    text-decoration: none;
+    font-size: var(--nav-font-size);
+    font-family: var(--titillium);
+    font-weight: bold;
+}
+
+#nav a:hover {
+    background-color: var(--nav-hover);
+    color: var(--text-dark);
+}
+
+#nav a.active {
+    background-color: var(--nav-active);
+    color: var(--dark);
+}
+
+/* CROP-CONTENTS, scales as well */
+.crop-contents {
+    width: var(--img-size);
+    height: var(--img-size);
+
+    position:relative;
+    overflow:hidden;
+    border-radius:50%;
+    text-align:center;
+
+    margin: var(--margin-default);
+}
+
+.crop-contents img {
+    height:100%;
+    margin-left: -50%;
+    margin-right: -50%;
+}
+
+/* Iframe containers*/
+.flex-container {
+    flex-wrap: wrap;
+}
+
+iframe {
+    min-width:400px;
+    width:47vw;
+    height: calc(47vw * .55);
+    min-height: 240px;
+}
+
+/* Aria CSS animation, can be deleted/moved to my CSS sheet later (here for the ID requirement) */
+#bouncy {
+  background-color: var(--blue);
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 20px;
+  box-shadow: 0 0 5px rgb(240,102,0);
+  object-fit: cover;
+  opacity: 0;
+}
+
+#bouncy-container {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  top: calc(50% - 100px);
+  left: 0;
+  overflow: visible;
+}
+
+/*Making the stars*/
+.star {
+  margin: 50px 0;
+  position: relative;
+  display: block;
+  color: yellow;
+  width: 0px;
+  height: 0px;
+  border-right: 100px solid transparent;
+  border-bottom: 70px solid yellow;
+  border-left: 100px solid transparent;
+  transform: rotate(35deg);
+}
+.star:before {
+  border-bottom: 80px solid yellow;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: -45px;
+  left: -65px;
+  display: block;
+  content: '';
+  transform: rotate(-35deg);
+}
+.star:after {
+  position: absolute;
+  display: block;
+  color: yellow;
+  top: 3px;
+  left: -105px;
+  width: 0px;
+  height: 0px;
+  border-right: 100px solid transparent;
+  border-bottom: 70px solid yellow;
+  border-left: 100px solid transparent;
+  transform: rotate(-70deg);
+  content: '';
+}
+.star-container {
+    opacity: 0;
+    margin: 20px;
+}
+
+.flex-parent-element {
+  display: flex;
+  width: 20%;
+}
