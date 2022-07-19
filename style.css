@@ -86,7 +86,7 @@
 }
 #home{
     width: 100%;
-    padding-left:0px;
+    padding-left:25px;
 }
 #abbreviation{
     font-size: var(--team-name-size);
@@ -331,7 +331,7 @@ div.section{
     height: var(--nav-height);
     max-width:100%;
     width:100%;
-    top:0px;
+    top:15px;
 }
 
 #nav a {
